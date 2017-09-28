@@ -1,0 +1,39 @@
+*{margin: 0;padding: 0;}
+#fc-con{
+	width:100%;height:100%;
+	background-size:100% 100%;
+	background-position:50% 50%;
+	animation-duration:0.8s;
+	animation-fill-mode:forwards;
+	animation-timing-function:ease;
+	font-size:0;position: relative;
+}
+@keyframes fc-show{
+	from{background-size:400% 400%;}
+	to{background-size:100% 100%;}
+}
+#fc-con>span{
+	position:absolute;top:50%;
+	width:10%;height:80px;
+	line-height:80px;
+	text-align:center;
+	transition:all 0.3s ease;
+	transform:translateY(-50%) rotateX(0deg);
+	color:white;font-weight:bolder;
+	font-size:60px;
+	z-index:10000;
+	cursor:pointer;
+}
+#fc-con>span:hover{
+	color:#ccc;
+	transform:translateY(-50%) rotateX(30deg);
+}
+#fc-con>span.fc-left{left:50px;}
+#fc-con>span.fc-right{right:50px;}
+/*part部分*/
+.fc-part{
+	width:50%;height:50%;
+	display:inline-block;
+	background-size:200% 200%;
+	background-repeat: no-repeat;
+}
